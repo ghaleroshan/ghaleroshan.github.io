@@ -10,24 +10,28 @@
 <body>
 
 <!-- Navigation bar --->
-<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="responsiveNavbar">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+<div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
-</button>
-        <div class="collapse navbar-collapse" id="responsiveNavbar">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class = "navbar-nav ml-auto">
                 <li class="nav-item active" >
                     <a class="nav-link" href="#">Home</a>
                 </li>
-                <li class="nav-item active" >
+                <li class="nav-item" >
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item" >
                     <a class="nav-link" href="#">Contact Me</a>
                 </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
             </ul>
-
         </div>
-    </div>
+</div>
 </nav>
 <!-- Carousel -->
 <div id="slides" class="carousel slide" data-ride="carousel">
@@ -37,9 +41,10 @@
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/header.jpg" alt="First slide" />
+            <img src="img/header3.jpg" alt="First slide" />
             <div class="carousel-caption">
                 <h1> Welcome</h1>
+                <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Contact Me</a>
             </div>
         </div>
         <div class="carousel-item">
@@ -69,25 +74,54 @@
 </div>
 </div>
 
-    <!---Connect --->
-    <div class="container-fluid padding">
-        <div class="row text-center padding">
-            <div class="col-12">
-            <h2> Connect</h2>
-                <hr class="my-4">
+<!--cards -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="container gallery">
+            <h2>Some of my shots</h2>
+            <hr class="hr-4">
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/header.jpg" alt="...">
             </div>
-            <div class="col-12 social padding">
-            <a href="https://www.facebook.com/ghaleroshan"><i class="fab fa-facebook"> </i></a>
-            <a href="https://www.instagram.com/ghalegraphy/"><i class="fab fa-instagram"> </i></a>
-            <a href="https://www.linkedin.com/in/ghaleroshan"><i class="fab fa-linkedin"> </i></a>
-            <a href="https://github.com/ghaleroshan/"><i class="fab fa-github"> </i></a>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/header3.jpg" alt="...">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/header2.jpg" alt="...">
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="img/header5.jpg" alt="...">
             </div>
         </div>
 
     </div>
 
-<!-- footer -->
-    <div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12 connect">
+            <hr class="hr-4">
+            <h2> Connect</h2>
+            <hr class="hr-4">
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://www.facebook.com/ghaleroshan"><i class="fab fa-facebook"> </i></a>
+            <a href="https://www.instagram.com/ghalegraphy/"><i class="fab fa-instagram"> </i></a>
+            <a href="https://www.linkedin.com/in/ghaleroshan"><i class="fab fa-linkedin"> </i></a>
+            <a href="https://github.com/ghaleroshan/"><i class="fab fa-github"> </i></a>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid padding">
         <div class="row text-center padding">
         <div class="col-12 footer padding">
             <p> Copyright 2019 - Roshan Ghale</p>
