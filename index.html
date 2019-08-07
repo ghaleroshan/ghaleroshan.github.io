@@ -1,36 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title> Roshan Ghale</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<script src="https://kit.fontawesome.com/913378ff1c.js"></script>
 </head>
 
 <body>
-<div id = "container">
-    <div id="header"><h1> Personal Info </h1> </div>
-        <div id ="content">
-                <div id = "nav">
-                    <h2> Menu </h2>
-                   <ul>
-                       <li> <a class="selected" href="" > Home </a></li>
-                       <li> <a href="" >About Me </a></li>
-                       <li> <a href="" >Contact Me </a></li>
-                    </ul>
-                </div>
 
-                <div id = "main">
-                    <h2> Home Page </h2>
-                <p> This is me Roshan Ghale.</p>
-                </div>
+<!-- Navigation bar --->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="responsiveNavbar">
+            <span class="navbar-toggler-icon"></span>
+</button>
+        <div class="collapse navbar-collapse" id="responsiveNavbar">
+            <ul class = "navbar-nav ml-auto">
+                <li class="nav-item active" >
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active" >
+                    <a class="nav-link" href="#">Contact Me</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!-- Carousel -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/header.jpg" alt="First slide" />
+            <div class="carousel-caption">
+                <h1> Welcome</h1>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/header.jpg" alt="Second slide" />
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--Jumbotron -->
+<div class="container-fluid">
+<div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <p class="para">
+
+            Actively looking for a Jr. BackEnd Engineer Roles. I am passionate about software development and determined to create digital solutions using Javascript (Node.Js & React.Js) and MySQL. I am willing to learn by my mistakes and extremely self motivated individual.
+        </p>
+    </div>
+</div>
+</div>
+
+    <!---Connect --->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+            <h2> Connect</h2>
+                <hr class="my-4">
+            </div>
+            <div class="col-12 social padding">
+            <a href="https://www.facebook.com/ghaleroshan"><i class="fab fa-facebook"> </i></a>
+            <a href="https://www.instagram.com/ghalegraphy/"><i class="fab fa-instagram"> </i></a>
+            <a href="https://www.linkedin.com/in/ghaleroshan"><i class="fab fa-linkedin"> </i></a>
+            <a href="https://github.com/ghaleroshan/"><i class="fab fa-github"> </i></a>
+            </div>
         </div>
 
+    </div>
 
+<!-- footer -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+        <div class="col-12 footer padding">
+            <p> Copyright 2019 - Roshan Ghale</p>
+        </div>
 
-            <div id = "footer"> Copyright Reserved by Roshan Ghale 2019 (C)</div>
-            </div>
+        </div>
+    </div>
 
-    </body>
-
-
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
 </html>
 
 

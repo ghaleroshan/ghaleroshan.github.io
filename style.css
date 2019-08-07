@@ -1,46 +1,64 @@
-body{
-    background-color: dimgray;
-    font-family: "Courier 10 Pitch"
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: SansSerif, serif;
+    color: #222;
 }
 
-a{
-    text-decoration: none;
-    color: darkred;
+.navbar {
+    padding: .8rem;
+}
+.nav-link{
+    font-size: 1.1em !important;
 }
 
-#nav ul{
-list-style-type: none;
-    padding: 0;
-}
-#header{
-background-color: silver;
-    padding: 20px;
-}
-#nav .selected{
-font-weight: bold;
-}
-#container{
-    background-color: white;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
 }
 
-#content {
-    padding: 10px;
-}
-#nav{
-    width: 180px;
-    float: left;
+.jumbotron{
+    padding: 1rem;
 }
 
-#main{
-    width: 800px;
-    float: right;
+.social{
+    padding: 3rem;
+    font-size: 4.5rem;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-instagram{
+    color: #DD2A7B;
+}
+.fa-github{
+    color: #222;
+}
+.fa-linkedin{
+    color: #0077B5;
 }
 
-#footer{
-    padding-top:20px ;
-    clear: both;
-    font-size: x-small;
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-github:hover,
+.fa-linkedin:hover{
+    color: #d5d5d5;
+}
+
+.footer{
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding: 2rem;
+}
+
+
+
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 576px) {
+
 }
