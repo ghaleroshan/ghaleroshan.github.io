@@ -1,3 +1,5 @@
-# ghaleroshan.github.io
-https://ghaleroshan.github.io
 # Personal Bio
+
+# ghaleroshan.github.io
+
+https://ghaleroshan.github.io
