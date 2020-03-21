@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title> Roshan Ghale</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <script src="https://kit.fontawesome.com/913378ff1c.js"></script>
+<head>
+  <title> Roshan Ghale</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script src="https://kit.fontawesome.com/913378ff1c.js"></script>
 </head>
 
 <body>
-<!-- Navigation bar --->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <!-- Navigation bar --->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class = "navbar-nav ml-auto">
-                <li class="nav-item active" >
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO -->
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>I am Roshan Ghale</h1>
-          <p>And I'm a Software Developer</p>
-          <button>Hire me</button>
-        </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ROSHAN</a>
+          </li>
+          <li> 
+          <a class="nav-link" href="./contact.html"> Contact</a>
+        </li>
+      </ul>
       </div>
-      <hr class="hr-4">
+    </div>
+  </nav>
 
-<!-- Tabs -->
+  <!-- HERO -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>I am Roshan Ghale</h1>
+      <p>And I'm a Software Developer</p>
+      <button class="hire" onclick= "handleHireClick()">Hire me</button>
+    </div>
+  </div>
+  <hr class="hr-4">
 
-<div class="wrapper">
+  <!-- Tabs -->
+
+  <div class="wrapper">
     <div class="tabs">
       <div role="tablist" aria-label="Programming Languages">
         <button role="tab" aria-selected="true" id="js">
           Random Images
         </button>
         <button role="tab" aria-selected="false" id="ruby">
-        Image
+          Shopping Cart
         </button>
         <button role="tab" aria-selected="false" id="php">
-        Image
+          Meme
         </button>
       </div>
       <div role="tabpanel" aria-labelledby="js">
         <div class="cards">
-            <div class="card" data-description="Wes is cool">
-              <img src="https://picsum.photos/200?random=1" alt="Wes Bos">
-              <button> View Full Size → </button>
-            </div>
-            <div class="card" data-description="Scott is neat!">
-              <img src="https://picsum.photos/200?random=2" alt="Wes Bos">
-              <button> View Full Size → </button>
-            </div>
-            <div class="card" data-description="Kait is beautiful!">
-              <img src="https://picsum.photos/200?random=3" alt="Wes Bos">
-              <button> View Full Size → </button>
-            </div>
-            <div class="card" data-description="Snickers is a dog!">
-              <img src="https://picsum.photos/200?random=4" alt="Wes Bos">
-              <button> View Full Size → </button>
-            </div>
-        
+          <div class="card" data-description="Wes is cool">
+            <img src="https://picsum.photos/200?random=1" alt="Wes Bos">
+            <button> View Full Size → </button>
           </div>
-        
-          <div class="modal-outer">
-            <div class="modal-inner">
-              <p>TEsting 123</p>
-            </div>
+          <div class="card" data-description="Scott is neat!">
+            <img src="https://picsum.photos/200?random=2" alt="Wes Bos">
+            <button> View Full Size → </button>
           </div>
-    </div>
+          <div class="card" data-description="Kait is beautiful!">
+            <img src="https://picsum.photos/200?random=3" alt="Wes Bos">
+            <button> View Full Size → </button>
+          </div>
+          <div class="card" data-description="Snickers is a dog!">
+            <img src="https://picsum.photos/200?random=4" alt="Wes Bos">
+            <button> View Full Size → </button>
+          </div>
+
+        </div>
+
+        <div class="modal-outer">
+          <div class="modal-inner">
+          </div>
+        </div>
+      </div>
 
 
       <div role="tabpanel" aria-labelledby="ruby" hidden>
-        <p>Ruby is great</p>
+        <div class="shopping-list">
+        <form class="form">
+          <input class="input" > 
+          <button class="submit"> + Submit </button>
+
+          <ul class="list">  </ul>
+        </form>
+      </div>
       </div>
       <div role="tabpanel" aria-labelledby="php" hidden>
-        <p>PHP is great!</p>
+        <section class="section-1">
+
+        </section>
       </div>
 
 
@@ -94,31 +106,28 @@
   </div>
 
 
-<!--Social Media-->
-    <div class="socialMedia">
-        <div class="connect">
-            <h2> Connect</h2>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com/ghaleroshan"><i class="fab fa-facebook"> </i></a>
-            <a href="https://www.instagram.com/ghalegraphy/"><i class="fab fa-instagram"> </i></a>
-            <a href="https://www.linkedin.com/in/ghaleroshan"><i class="fab fa-linkedin"> </i></a>
-            <a href="https://github.com/ghaleroshan/"><i class="fab fa-github"> </i></a>
-        </div>
+  <!--Social Media-->
+  <div class="socialMedia">
+    <div class="connect">
+      <h2> Connect</h2>
     </div>
-</div>
-
-<!--footer-->
-<div class="container-fluid padding">
-    <div class="row text-center padding">
-        <div class="col-12 footer padding">
-            <p> Copyright 2019 - Roshan Ghale</p>
-        </div>
+    <div class="social">
+      <a href="https://www.facebook.com/ghaleroshan"><i class="fab fa-facebook"> </i></a>
+      <a href="https://www.instagram.com/ghalegraphy/"><i class="fab fa-instagram"> </i></a>
+      <a href="https://www.linkedin.com/in/ghaleroshan"><i class="fab fa-linkedin"> </i></a>
+      <a href="https://github.com/ghaleroshan/"><i class="fab fa-github"> </i></a>
     </div>
-</div>
+  </div>
+  </div>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="./script.js"></script>
+  <!--footer-->
+  <div class="footer">
+    <p> Copyright 2019 - Roshan Ghale</p>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
