@@ -1,0 +1,61 @@
+body {
+	background-image: linear-gradient(to right, lightblue, lightgrey);
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	padding: 5rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.inner-form {
+	justify-content: center;
+	background-color: white;
+	border-radius: 5px;
+	max-width: 20rem;
+	width: 100%;
+	padding: 3rem;
+}
+
+.contact-title {
+	text-align: center;
+	margin-bottom: 3rem;
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+input {
+	display: block;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	margin-bottom: 2rem;
+	width: 100%;
+}
+
+.name-form,
+.email,
+.comment {
+	font-size: 12px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-bottom: 16px;
+}
+
+textarea {
+	border-color: lightgray;
+	width: 100%;
+}
+
+.submit-form {
+	background-color: #24a0ed;
+	border-radius: 2px;
+	margin-top: 20px;
+	color: white;
+}
+
+.submit-form:hover {
+	background-color: lightblue;
+}
