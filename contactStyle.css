@@ -1,11 +1,6 @@
-body {
-	background-image: linear-gradient(to right, lightblue, lightgrey);
-}
-
 .form {
 	display: flex;
 	justify-content: center;
-	padding: 5rem;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -14,9 +9,9 @@ body {
 	justify-content: center;
 	background-color: white;
 	border-radius: 5px;
-	max-width: 20rem;
+	max-width: 30rem;
 	width: 100%;
-	padding: 3rem;
+	padding: 2rem;
 }
 
 .contact-title {
@@ -39,7 +34,7 @@ input {
 .name-form,
 .email,
 .comment {
-	font-size: 12px;
+	font-size: 14px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-bottom: 16px;
 }

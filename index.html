@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contactStyle.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <script src="https://kit.fontawesome.com/913378ff1c.js"></script>
 </head>
@@ -21,12 +22,9 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">ROSHAN</a>
+            <a class="nav-link" href="index.html">ROSHAN</a>
           </li>
-          <li> 
-          <a class="nav-link" href="./contact.html"> Contact</a>
-        </li>
-      </ul>
+        </ul>
       </div>
     </div>
   </nav>
@@ -36,74 +34,79 @@
     <div class="hero-text">
       <h1>I am Roshan Ghale</h1>
       <p>And I'm a Software Developer</p>
-      <button class="hire" onclick= "handleHireClick()">Hire me</button>
+      <button class="hire" onclick="handleHireClick()">Hire me</button>
     </div>
   </div>
   <hr class="hr-4">
 
+
   <!-- Tabs -->
+  <section class="section-1">
+    <div class="wrapper">
+      <div class="tabs">
+        <div role="tablist" aria-label="Programming Languages">
+          <button role="tab" aria-selected="true" id="js">
+            Random Images
+          </button>
+          <button role="tab" aria-selected="false" id="shopping-list">
+            Shopping Cart
+          </button>
+          <button role="tab" aria-selected="false" id="meme">
+            Meme
+          </button>
+        </div>
+        <div role="tabpanel" aria-labelledby="js">
+          <div class="cards">
+            <div class="card" data-description="cool-cards">
+              <img src="https://picsum.photos/200?random=1" alt="Cool Image">
+              <button> View Full Size → </button>
+            </div>
+            <div class="card" data-description="cool-cards">
+              <img src="https://picsum.photos/200?random=2" alt="Cool Image">
+              <button> View Full Size → </button>
+            </div>
+            <div class="card" data-description="cool-cards">
+              <img src="https://picsum.photos/200?random=3" alt="Cool Image">
+              <button> View Full Size → </button>
+            </div>
+            <div class="card" data-description="cool-cards">
+              <img src="https://picsum.photos/200?random=4" alt="Cool Image">
+              <button> View Full Size → </button>
+            </div>
 
-  <div class="wrapper">
-    <div class="tabs">
-      <div role="tablist" aria-label="Programming Languages">
-        <button role="tab" aria-selected="true" id="js">
-          Random Images
-        </button>
-        <button role="tab" aria-selected="false" id="ruby">
-          Shopping Cart
-        </button>
-        <button role="tab" aria-selected="false" id="php">
-          Meme
-        </button>
-      </div>
-      <div role="tabpanel" aria-labelledby="js">
-        <div class="cards">
-          <div class="card" data-description="Wes is cool">
-            <img src="https://picsum.photos/200?random=1" alt="Wes Bos">
-            <button> View Full Size → </button>
-          </div>
-          <div class="card" data-description="Scott is neat!">
-            <img src="https://picsum.photos/200?random=2" alt="Wes Bos">
-            <button> View Full Size → </button>
-          </div>
-          <div class="card" data-description="Kait is beautiful!">
-            <img src="https://picsum.photos/200?random=3" alt="Wes Bos">
-            <button> View Full Size → </button>
-          </div>
-          <div class="card" data-description="Snickers is a dog!">
-            <img src="https://picsum.photos/200?random=4" alt="Wes Bos">
-            <button> View Full Size → </button>
           </div>
 
+          <div class="modal-outer">
+            <div class="modal-inner">
+            </div>
+          </div>
         </div>
 
-        <div class="modal-outer">
-          <div class="modal-inner">
+
+        <div role="tabpanel" aria-labelledby="shopping-list" hidden>
+          <div class="shopping-list">
+            <form class="form">
+              <input class="input">
+              <button class="submit"> + ADD</button>
+              <ul class="list"> </ul>
+            </form>
           </div>
         </div>
+        <div role="tabpanel" aria-labelledby="meme" hidden>
+          <section class="section-1">
+
+          </section>
+        </div>
       </div>
-
-
-      <div role="tabpanel" aria-labelledby="ruby" hidden>
-        <div class="shopping-list">
-        <form class="form">
-          <input class="input" > 
-          <button class="submit"> + Submit </button>
-
-          <ul class="list">  </ul>
-        </form>
-      </div>
-      </div>
-      <div role="tabpanel" aria-labelledby="php" hidden>
-        <section class="section-1">
-
-        </section>
-      </div>
-
-
-
     </div>
-  </div>
+  </section>
+
+  <!--Testimonials -->
+
+  <section> 
+      
+
+  </section>
 
 
   <!--Social Media-->
@@ -119,11 +122,37 @@
     </div>
   </div>
   </div>
+  <hr />
+
+  <!-- Contact Us -->
+  <section class="form">
+    <div class="inner-form">
+      <form action="mailto:ghaleroshan@gmail.com" method="post" enctype="text/plain">
+        <div class="contact-title">CONTACT ME</div>
+        <div class="name-form">
+          <input type="text" name="name" placeholder="Full Name" required />
+        </div>
+
+        <div class="email">
+          <input type="email" name="mail" placeholder="Email" required />
+        </div>
+
+        <div class="comment">
+          <textarea rows="5" cols="10" placeholder="Enter your message..."></textarea>
+        </div>
+
+        <button class="submit-form">Send Message</button>
+      </form>
+    </div>
+  </section>
 
   <!--footer-->
-  <div class="footer">
-    <p> Copyright 2019 - Roshan Ghale</p>
-  </div>
+
+  <section class="footer">
+    <div class="footer">
+      <p> Copyright 2019 - Roshan Ghale</p>
+    </div>
+  </section>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

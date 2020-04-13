@@ -102,7 +102,7 @@ button:focus {
 }
 
 .card {
-	padding: 1rem;
+	padding: 10px;
 	border-radius: 2px;
 }
 
@@ -117,7 +117,7 @@ button:focus {
 }
 .modal-outer {
 	display: grid;
-	background: hsla(0, 0%, 51%, 1);
+	background: hsla(0, 0%, 51%, 0.6);
 	position: fixed;
 	height: 100vh;
 	width: 100vw;
@@ -141,9 +141,9 @@ button:focus {
 }
 
 .modal-inner {
-	max-width: 600px;
-	min-width: 400px;
-	padding: 2rem;
+	max-width: 500px;
+	min-width: 250px;
+	padding: 10px;
 	border-radius: 5px;
 	min-height: 200px;
 	background: white;
@@ -222,6 +222,6 @@ button:focus {
 .footer {
 	background-color: #3f3f3f;
 	color: #d5d5d5;
-	padding: 2em;
+	padding: 1.2rem;
 	text-align: center;
 }
